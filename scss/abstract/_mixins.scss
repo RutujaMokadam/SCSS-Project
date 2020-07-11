@@ -1,0 +1,157 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table
+  }
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media  (max-width: 600px){@content};
+  }
+
+ 
+
+  @if $breakpoint == tab-port {
+    @media  (max-width: 900px){@content};
+  }
+
+ 
+
+  @if $breakpoint == tab-land {
+    @media  (max-width: 1200px){@content};
+  }
+  
+  @if $breakpoint == laptop {
+    @media  (max-width: 1699px){@content};
+  }
+
+ 
+
+  @if $breakpoint == big-desk {
+    @media  (min-width: 1800px){@content};
+  }
+}
+ 
+
+// @mixin respond($breakpoint) {
+//   @if $breakpoint == phone {
+//     @media (max-device-width: 480px) and (orientation: portrait){@content};
+//   }
+//   @if $breakpoint == phone-land{
+//     @media (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape){@content};
+//   }
+  
+ 
+//   @if $breakpoint == tab-port {
+//     @media  (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {@content};
+//   }
+ 
+//   @if $breakpoint == tab-land {
+//     @media  (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {@content};
+//   }
+  
+//   @if $breakpoint == laptop {
+//     @media  (min-width: 1024px) and (max-width: 1366px){@content};
+//   }
+ 
+//   @if $breakpoint == big-desk {
+//     @media  (min-width: 1367px){@content};
+//   }
+// }
+
+@mixin respond_IE{
+  @media (-ms-high-contrast: none),
+  (-ms-high-contrast: active){
+    @content;
+  }
+}
+
+
+@mixin list-items {
+  list-style: none;
+  padding: 0;
+  li {
+      list-style-type: none;
+      margin-bottom: 2rem;
+      padding-left: 1.3em;
+     
+      &:before {
+          content: "\f058";
+          font-family: FontAwesome;
+          display: inline-block;
+          margin-left: -1.3em;
+          color: $color-primary;
+          width: 1.3em;
+      }
+
+      p {
+          display: inline;
+          font-size: $body-font-size;
+      }
+  }
+}
+
+@mixin TextSpacing($font-size) {
+  // letter-spacing: 0.12 * $font-size;
+  // word-spacing: 0.16 * $font-size;
+  // line-height: 1.5 * $font-size;
+}
+
+@mixin  fix-width-screen {
+ max-width: $screen-fix-width;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
+
+
+@mixin model-header {
+  padding: 5rem 3rem 2rem 5rem;
+  color: $color-primary;
+  border-bottom: none;
+  @include respond(phone){
+  padding: 3rem 3rem 2rem 4rem;
+  }
+  .modal-title{
+    font-size: $template-title-font-size;
+    @include respond(phone) {
+      font-size: $template-title-font-size - 0.5;
+  }
+  }
+
+  button {
+      font-size: 4rem;
+      @include respond(phone) {
+          font-size: $model-header-font-size;
+      }
+  }
+}
+
+
+@mixin menu-modal-header {
+  padding: $model-header-padding;
+  color: $color-primary;
+  border-bottom: none;
+  .modal-title{
+    font-size: $model-header-font-size;
+    @include respond(phone) {
+      font-size: $model-header-font-size - 0.5;
+  }
+  }
+  
+  button {
+      font-size: 4rem;
+      @include respond(phone) {
+          font-size: $model-header-font-size;
+      }
+  }
+}
+
+@mixin zoom-btn-wrapper {
+  height: auto;
+  width: auto;
+  position: relative;
+  display: inline-block;
+}

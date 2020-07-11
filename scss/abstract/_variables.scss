@@ -1,0 +1,85 @@
+/* BREAKPOINTS */
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$iphone_min: 414px;
+$iphone_max: 736px;
+$galaxy_min: 320px;
+$galaxy_max: 413px;
+
+
+$font-family: "open_sansregular";
+
+/* Colors Default*/
+$instruction-color:#333333;
+$ost-color: #333333;
+
+
+$tab-text-color: #ffffff;
+$tab-bg-color:#283b8a; 
+$video-player-color:#283b8a;
+$tab-rollover: #1e2f76;
+$tab-visited: #0272b7;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+$color-primary: #ce3029;
+$btnRollOver:#dc2223;
+
+$btn-disabled-color :#999;
+
+$color-secondary-light: #ffb900;
+$color-secondary-dark: #ff7730;
+$color-third-light: #2998ff;
+$color-third-dark: #5643fa;
+$color-white: #fff;
+$color-black: #000;
+$color-grey-dark: #777;
+$color-grey-light-1: #f7f7f7;
+$screen-fix-width :900px;
+
+// model common variables
+$model-header-font-size: 2.5rem;
+$model-sub-header-font-size: 2rem;
+$model-header-padding: 2rem 2rem;
+$modal-header-color: $color-primary;
+
+
+/* Colors Custom*/
+$color-custom-red: #BB162C;
+$color-light-grey: #d3d3d3;
+$color-light-coral: #f08080;
+
+$active-content-shadow:0 0.3rem 0.2rem rgba(223, 7, 7, 0.466);
+$active-border: 1px solid #BB162C;
+
+
+/* CHANGE BY SONAL */
+
+$body-font-size: 1.8rem;
+$template-title-font-size: 3rem;
+$template-sub-title-font-size: 2.2rem;
+
+$instruction-font-size: 2.2rem;
+$question-font-size: 2rem;
+$feature-btn-font-size: 8rem;
+
+$launch-header-font-size: 5.5rem;
+$launch-header-letter-spacing: 0.3rem;
+
+$simple-text-list-font-size: 1.8rem;
+
+$flipcard-back-font-size: 2.4rem;
+$flipcard-front-font-size: 2.4rem;
+
+$alphabets-font-size: 2rem;
+
+$modal-title-font-size: 2rem;
+
+$level1-listitem-space: 1.5rem;
+
+// change by sonal
+$btn-font-size: 2rem;
+
+$heading-font-size: 2.5rem;
+
+$menu-links-font-size: 1.6rem;

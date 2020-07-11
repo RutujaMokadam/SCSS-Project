@@ -1,0 +1,135 @@
+.row {
+  margin: 0 auto; }
+  .row .menubar {
+    background-color: darkblue;
+    height: 55px;
+    width: 100%; }
+  .row .menucontent {
+    position: absolute;
+    top: 10%;
+    height: 100vh;
+    width: 20%;
+    background: white;
+    z-index: 1;
+    box-shadow: 5px 10px 8px #888888; }
+    .row .menucontent ul {
+      list-style-type: none;
+      padding: 12%; }
+      .row .menucontent ul li {
+        padding: 5%; }
+  .row span.fa-stack.fa-lg {
+    margin-left: 2%;
+    margin-top: 5px;
+    font-size: x-large;
+    color: white; }
+  .row .logoimage {
+    width: 10%; }
+  .row .righticons {
+    margin-top: 15px;
+    display: flex;
+    float: right;
+    font-size: 10px;
+    border-left: 1px solid #00cbbc;
+    color: white;
+    padding-left: 16px; }
+    .row .righticons .form-check-label-pickup {
+      margin-left: 20px; }
+    .row .righticons .username {
+      margin-top: -11px;
+      color: white; }
+
+.row.pizzatype {
+  padding-top: 1%;
+  padding-left: 9%;
+  box-shadow: 5px 10px 8px #888888;
+  background-color: white;
+  z-index: -1;
+  position: relative; }
+  .row.pizzatype button {
+    border: none;
+    background-color: white;
+    padding-bottom: 5%; }
+    .row.pizzatype button:focus {
+      outline: none;
+      border-bottom: 3px solid green; }
+
+.pizzaitems .perticularpizza {
+  margin: 0% 10% 0% 10%; }
+  .pizzaitems .perticularpizza .menuhr {
+    position: relative;
+    top: 15px;
+    width: 100%;
+    z-index: -1;
+    border: 1px solid #d2d2d2; }
+  .pizzaitems .perticularpizza .bestseller_bullet {
+    background-color: white;
+    width: 15%;
+    margin-left: 12px;
+    text-align: center;
+    border-radius: 12px; }
+
+.card .card-img-top {
+  width: 100%;
+  height: 150px; }
+
+.card .titlendiscrip {
+  height: 5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #d2d2d2; }
+
+.card .card-text {
+  font-size: xx-small; }
+
+.card .card-title {
+  font-size: unset; }
+
+.card .dropdown {
+  display: inline; }
+  .card .dropdown button {
+    background: white;
+    color: black;
+    border: none; }
+    .card .dropdown button:focus .card .dropdown button:active {
+      background: white;
+      color: black;
+      border: none; }
+    .card .dropdown button .dropdown-toggle {
+      background-color: none;
+      border-color: none; }
+    .card .dropdown button .btn-primary:focus .card .dropdown button .btn-primary:active {
+      background-color: none;
+      border-color: none; }
+
+.card .addtocard .btnaddtcard {
+  float: right;
+  background: white;
+  font-size: x-small;
+  border-color: green;
+  border-radius: 12px; }
+
+.row.secondrow {
+  margin-top: 2%; }
+
+.addeditems {
+  margin-top: 25%; }
+  .addeditems .ordertitle {
+    text-align: center;
+    color: green;
+    font-size: xx-large; }
+  .addeditems .titlendiscrip {
+    height: 10rem;
+    border-bottom: 1px solid #d2d2d2; }
+  .addeditems .orderedpizza {
+    display: inline-block; }
+  .addeditems .removefromcard .btnaddtcard {
+    float: right;
+    background: white;
+    font-size: x-small;
+    border-color: green;
+    border-radius: 12px; }
+
+body {
+  margin: 0 auto;
+  background-color: #f2f2f2; }
+
+/*# sourceMappingURL=style.css.map */

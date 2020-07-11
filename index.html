@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        SASS FIRST PROJECT
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="continer">
+            <div class="row ">
+                <div class="menubar">
+                    <div class="sitelogo">
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </span>
+                        <img class="logoimage" src="images/dominosLog.png" alt="">
+                        <div class="righticons row">
+                            <div class="Deliveryitem col-lg-2">
+                                <label class="form-check-label-Delivery ">
+                                    <input type="radio" name="Delivery" class="form-check-input" value="">Delivery
+                                </label>
+                            </div>
+                            <div class="col-lg-5">
+                                <label class="form-check-label-pickup">
+                                    <input type="radio" name="pickup/dinein" class="form-check-input" value="">Pick
+                                    up/Dinein
+                                </label>
+                            </div>
+                            <div class="col-lg-5">
+                                <i class="fa fa-user-circle-o form-check-label-user" aria-hidden="true"></i>
+
+
+                                <span class="username">
+                                    <span>MY ACCOUNT<br><a href="">Login | Signup</a></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="menucontent">
+                    <ul>
+                        <li> <span><i class="fa fa-map-marker" aria-hidden="true"></i></span> Track Current Order</li>
+                        <li> <span><img src="images/pizzaicon.png" width="20px" alt=""></span> Order History</li>
+                        <li><span><i class="fa fa-home" aria-hidden="true"></i></span> Home</li>
+                        <li><span><i class="fa fa-money" aria-hidden="true"></i></span> Deals and Offers</li>
+                        <li><span><img src="images/menucardicon.png" width="20px" alt=""></span> Menu</li>
+                        <li><span><img src="images/billicon.png" width="20px" alt=""></span> Terms and Condition</li>
+                        <li><span><img src="images/termsandcondi.png" width="20px" alt=""></span> Feedback</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row pizzatype">
+                <div class="col-lg-2  col-md-2 col-sm-2 col-xs-2 type_1">
+                    <div class="everyday_value">
+                        <button>Everyday Value</button>
+                    </div>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-2 col-xs-2 type_2">
+                    <div class="bestseller">
+                        <button>BESTSELLER</button>
+                    </div>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-2 col-xs-2 type_3">
+                    <div class="vegPizza">
+                        <button>Veg Pizza</button>
+                    </div>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-2 col-xs-2 type_4">
+                    <div class="nonvegPizza">
+                        <button>NonVeg Pizza</button>
+                    </div>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-2 col-xs-2 type_5">
+                    <div class="beverages">
+                        <button>Beverages</button>
+                    </div>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-2 col-xs-2 type_6">
+                    <div class="dessert">
+                        <button>Dessert</button>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div class="row">
+                    <div class="col-lg-8 col-md-6 col-sm-6 col-xs-6 pizzaitems">
+                        <div>
+                            <span class="perticularpizza">
+                                <div class="menuhr"></div>
+                                <p class="bestseller_bullet">BESTSELLER</p>
+                            </span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div class="card">
+                                    <img class="card-img-top" src="images/farmhouse.png" alt="Card image">
+                                    <div class="card-body">
+                                        <div class="titlendiscrip">
+                                            <h4 class="card-title">Farmhouse</h4>
+                                            <p class="card-text">Delightful combination of onion, capsicum, tomato &
+                                                grilled
+                                                mushroom</p>
+                                        </div>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-primary dropdown-toggle"
+                                                data-toggle="dropdown">
+                                                size
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Regular</a>
+                                                <a class="dropdown-item " href="#">Medium</a>
+                                                <a class="dropdown-item " href="#">Large</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="addtocard">
+                                            <button class="btnaddtcard farmbtn">ADD TO CARD</button>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div class="card">
+                                    <img class="card-img-top" src="images/new_cheese_n_corn.png" alt="Card image">
+                                    <div class="card-body">
+                                        <div class="titlendiscrip">
+                                            <h4 class="card-title">Cheese n Corn</h4>
+                                            <p class="card-text">Sweet & Juicy Golden corn and 100% real mozzarella
+                                                cheese in a delectable combination !</p>
+                                        </div>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-primary dropdown-toggle"
+                                                data-toggle="dropdown">
+                                                size
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Regular</a>
+                                                <a class="dropdown-item " href="#">Medium</a>
+                                                <a class="dropdown-item " href="#">Large</a>
+                                            </div>
+                                        </div>
+                                        <div class="addtocard">
+                                            <button class="btnaddtcard ccbtn">ADD TO CARD</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div class="card">
+                                    <img class="card-img-top" src="images/new_margherita_2502.png" alt="Card image">
+                                    <div class="card-body">
+                                        <div class="titlendiscrip">
+                                            <h4 class="card-title">Margherita</h4>
+                                            <p class="card-text">A classic delight with 100% Real mozzarella cheese</p>
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-primary dropdown-toggle"
+                                                data-toggle="dropdown">
+                                                size
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Regular</a>
+                                                <a class="dropdown-item " href="#">Medium</a>
+                                                <a class="dropdown-item " href="#">Large</a>
+                                            </div>
+                                        </div>
+                                        <div class="addtocard">
+                                            <button class="btnaddtcard margheritabtn">ADD TO CARD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row secondrow">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div class="card">
+                                    <img class="card-img-top" src="images/new_veggie_paradise.png" alt="Card image">
+                                    <div class="card-body">
+                                        <div class="titlendiscrip">
+                                            <h4 class="card-title">Veggie Paradise</h4>
+                                            <p class="card-text">The awesome foursome! Golden corn, black olives,
+                                                capsicum, red paprika</p>
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-primary dropdown-toggle"
+                                                data-toggle="dropdown">
+                                                size
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Regular</a>
+                                                <a class="dropdown-item " href="#">Medium</a>
+                                                <a class="dropdown-item " href="#">Large</a>
+                                            </div>
+                                        </div>
+                                        <div class="addtocard">
+                                            <button class="btnaddtcard">ADD TO CARD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div class="card">
+                                    <img class="card-img-top" src="images/new_veg_extravaganza.png" alt="Card image">
+                                    <div class="card-body">
+                                        <div class="titlendiscrip">
+                                            <h4 class="card-title">Veg Extravaganza</h4>
+                                            <p class="card-text">Black olives, capsicum, onion, grilled mushroom, corn,
+                                                tomato, jalapeno & extra cheese</p>
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-primary dropdown-toggle"
+                                                data-toggle="dropdown">
+                                                size
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Regular</a>
+                                                <a class="dropdown-item " href="#">Medium</a>
+                                                <a class="dropdown-item " href="#">Large</a>
+                                            </div>
+                                        </div>
+                                        <div class="addtocard">
+                                            <button class="btnaddtcard">ADD TO CARD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <div class="card">
+                                    <img class="card-img-top" src="images/new_pepper_barbeque_chicken.png"
+                                        alt="Card image">
+                                    <div class="card-body">
+                                        <div class="titlendiscrip">
+                                            <h4 class="card-title">Pepper Barbecue Chicken</h4>
+                                            <p class="card-text">Pepper barbecue chicken for that extra zing</p>
+                                        </div>
+
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-primary dropdown-toggle"
+                                                data-toggle="dropdown">
+                                                size
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">Regular</a>
+                                                <a class="dropdown-item " href="#">Medium</a>
+                                                <a class="dropdown-item " href="#">Large</a>
+                                            </div>
+                                        </div>
+                                        <div class="addtocard">
+                                            <button class="btnaddtcard">ADD TO CARD</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 orderplace">
+                        
+                            <div class="card addeditems">
+                                <h4 class="card-title ordertitle">Orders</h4>
+                                <div class="card-body">
+                                    <div class="titlendiscrip pizza1">
+                                        <h4 class="card-title">Cheese n Corn</h4>
+                                        <div class="orderedpizza">
+                                            <img  src="images/new_cheese_n_corn.png" width="40%" alt="Card image">
+                                            <p class="card-text">Sweet & Juicy Golden corn and 100% real mozzarella
+                                            cheese in a delectable combination !</p>
+                                            
+                                        </div>
+                                        <div class="removefromcard">
+                                            <button class="btnaddtcard btnremovecard">Remove</button>
+                                        </div>
+                                    </div>
+                                    <div class="titlendiscrip pizza2">
+                                        <h4 class="card-title">Farmhouse</h4>
+                                        <div class="orderedpizza">
+                                            <img  src="images/farmhouse.png" width="40%" alt="Card image">
+                                            <p class="card-text">Delightful combination of onion, capsicum, tomato &
+                                                grilled
+                                                mushroom</p>
+                                            
+                                        </div>
+                                        <div class="removefromcard">
+                                            <button class="btnaddtcard btnremovecard">Remove</button>
+                                        </div>
+                                    </div>
+                                    <div class="titlendiscrip pizza3">
+                                        <h4 class="card-title">Margherita</h4>
+                                        <div class="orderedpizza">
+                                            <img  src="images/new_margherita_2502.png" width="40%" alt="Card image">
+                                            <p class="card-text">A classic delight with 100% Real mozzarella cheese</p>
+                                            
+                                        </div>
+                                        <div class="removefromcard">
+                                            <button class="btnaddtcard btnremovecard">Remove</button>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                   
+                                </div>
+
+                            </div>
+                       
+                    </div>
+
+                </div>
+            </section>
+            <section>
+                <div class="row">
+
+                </div>
+            </section>
+        </div>
+        </div>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+.page-layout {
+  margin-left: 1rem;
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  #image-container {
+    text-align: center;
+  }
+
+  @include respond(tab-port) {
+    margin-left: 0;
+  }
+
+  @include respond(phone) {
+    margin-left: 0;
+  }
+}
+
+ul,
+ol {
+  line-height: 1.5em;
+  margin: 5px 0 0 15px;
+  padding-right: 4rem;
+
+  @include respond(tab-port) {
+    padding-right: 0rem;
+  }
+
+  @include respond(tab-land) {
+    padding-right: 0rem;
+  }
+
+  @include respond(phone) {
+    line-height: 1.2em;
+    margin: 5px 0 0 6px;
+    padding-right: 2rem;
+  }
+
+  &.level1 {
+    &>li {
+      margin-bottom: $level1-listitem-space;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 8px;
+        height: 8px;
+        background-color: #333;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+
+        @include respond(phone) {
+          top: 6px;
+        }
+      }
+    }
+  }
+
+  &.level2 {
+    &>li {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 8px;
+        height: 8px;
+        border: 1px solid #333;
+        background-color: transparent;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+
+        @include respond(phone) {
+          top: 6px;
+        }
+      }
+    }
+  }
+
+  &.level3 {
+    &>li {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        width: 8px;
+        height: 8px;
+        border: 1px solid #333;
+        box-shadow: 1px 1px 0px 1px #000;
+        background-color: transparent;
+
+        @include respond(phone) {
+          top: 6px;
+        }
+      }
+    }
+  }
+
+  &.level4 {
+    &>li {
+      &::before {
+        content: "*";
+        position: absolute;
+        left: 0;
+        color: #333;
+        font-size: 21px;
+        top: 3px;
+
+        @include respond(phone) {
+          top: 6px;
+        }
+      }
+    }
+  }
+
+  &.level5 {
+    &>li {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 9px;
+        background: #333;
+        height: 8px;
+        transform: rotate(45deg);
+        width: 8px;
+
+        @include respond(phone) {
+          top: 6px;
+        }
+      }
+    }
+  }
+
+  &.level6 {
+    &>li {
+      &::before {
+        content: "=";
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #333;
+        font-size: 20px;
+
+        @include respond(phone) {
+          top: 6px;
+        }
+      }
+    }
+  }
+
+  li {
+    list-style: none;
+    position: relative;
+    padding: 0 0 3px 15px;
+  }
+}
+
+ol {
+  padding-left: 2rem;
+
+  li {
+    list-style: decimal;
+    padding: 0 0 0 0px;
+
+    &::before {
+      display: none;
+    }
+
+    ul {
+      li {
+        list-style: none;
+        position: relative;
+        padding: 0 0 3px 15px;
+
+        &::before {
+          display: inline;
+        }
+      }
+    }
+  }
+}
+
+.note-text-box {
+  ul {
+    margin: 0 0 0 0;
+    padding: 0 1rem 0 0;
+    li::before{
+      background-color: $tab-bg-color;
+    }
+  }
+
+  ol {
+    padding: 0 1rem 0 0.5rem;
+  }
+}
+
+.note-text-wrapper {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+
+  &.upper-note-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .note-text-contener {
+    border: 1px solid $tab-bg-color;
+    color: $tab-bg-color;
+
+    .note-icon-box {
+      background-color: $tab-bg-color;
+      color: #fff;
+      position: relative;
+      min-height: 10rem;
+
+      .note-icon {
+        font-size: 7rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 4.3rem;
+        height: 6.7rem;
+      }
+    }
+
+    .note-text-box {
+      padding-top: 1rem;
+    }
+  }
+}
+
+
+
+.table-container {
+  padding: 0;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+
+  .table-wrapper {
+    outline: none;
+
+    
+    
+    @include respond(phone) {
+      .table{
+        overflow-x:auto; 
+        display:block
+      }
+      .table th,
+      .table td {
+        padding: 0.5rem;
+        font-size: 0.9em;
+      }
+    }
+
+    .table-heading {
+      background-color: $tab-visited;
+      color: $color-white;
+      outline: none;
+      border: 1px solid $color-white;
+      &:first-child{
+        border-left-color: $tab-visited;
+      }
+      &:last-child{
+        border-right-color: $tab-visited;
+      }
+    }
+
+    tbody {
+      outline: none;
+
+      .table-body {
+        background-color: #d8f0ff;
+        color: $tab-bg-color;
+        outline: none;
+        border: 1px solid #666;
+      }
+    }
+  }
+
+
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+i,
+li,
+ul,
+div,
+h6,
+span {
+  outline: none;
+}
+
+.launch-bg {
+  background-image: url('../assets/eng/pages/media/images/module01/Landing.png');
+
+  @include respond(phone) {    
+    background-image: url('../assets/eng/pages/media/images/module01/Divider_Texture.png');
+  }
+  @include respond(tab-port) {    
+    background-image: url('../assets/eng/pages/media/images/module01/Divider_Texture.png');
+  }
+  @include respond(tab-land) {    
+    background-image: url('../assets/eng/pages/media/images/module01/Divider_Texture.png');
+  }
+
+  &.chapter-divider {
+    background-image: url('../assets/eng/pages/media/images/module01/Divider_Texture.png');
+  }
+}

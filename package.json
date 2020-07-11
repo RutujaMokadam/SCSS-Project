@@ -1,0 +1,15 @@
+{
+  "name": "layout_basic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass scss/main.scss css/style.css -w --source-map true"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {},
+  "description": ""
+}
