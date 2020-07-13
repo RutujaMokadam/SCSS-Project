@@ -1,3 +1,7 @@
+/* BREAKPOINTS */
+/* Colors Default*/
+/* Colors Custom*/
+/* CHANGE BY SONAL */
 .row {
   margin: 0 auto; }
   .row .menubar {
@@ -85,6 +89,10 @@
 
 .card .dropdown {
   display: inline; }
+  .card .dropdown .btn-primary.dropdown-toggle {
+    color: black;
+    background-color: white;
+    border-color: white; }
   .card .dropdown button {
     background: white;
     color: black;
@@ -92,7 +100,8 @@
     .card .dropdown button:focus .card .dropdown button:active {
       background: white;
       color: black;
-      border: none; }
+      border: none;
+      border-color: white; }
     .card .dropdown button .dropdown-toggle {
       background-color: none;
       border-color: none; }

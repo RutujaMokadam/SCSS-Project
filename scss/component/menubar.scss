@@ -11,7 +11,7 @@
        top:10%;
         height: 100vh;
         width: 20%;
-        background: white;
+        background: $primary-color;
         z-index: 1;
         box-shadow: 5px 10px 8px #888888;
         ul{
@@ -26,7 +26,7 @@
         margin-left: 2%;
         margin-top: 5px;
         font-size: x-large;
-        color: white;
+        color: $primary-color;
     }
     .logoimage {
         width: 10%;
@@ -37,7 +37,7 @@
         float: right;
         font-size: 10px;
         border-left: 1px solid #00cbbc;
-        color: white;
+        color: $primary-color;
         padding-left: 16px;
 
         .form-check-label-pickup {
@@ -45,7 +45,7 @@
         }
         .username {
             margin-top: -11px;
-            color: white;
+            color: $primary-color;
         }
     }
 }
@@ -53,17 +53,16 @@
     padding-top: 1%;
     padding-left: 9%;
     box-shadow: 5px 10px 8px #888888;
-    background-color: white;
+    background-color:$primary-color;
     z-index: -1;
     position: relative;
     button {
         border: none;
-        background-color: white;
+        background-color: $primary-color;
         padding-bottom: 5%;
-
-        &:focus {
+        &:focus{
             outline: none;
-            border-bottom: 3px solid green;
+            border-bottom: 3px solid $secondary-color;
         }
     }
 }
@@ -78,7 +77,7 @@
             border: 1px solid rgb(210, 210, 210);
         }
         .bestseller_bullet{
-            background-color: white;
+            background-color:$primary-color;
             width: 15%;
             margin-left: 12px;
             text-align: center;
@@ -104,14 +103,20 @@
     }
     .dropdown {
         display: inline;
+        .btn-primary.dropdown-toggle {
+            color: black;
+             background-color: $primary-color; 
+             border-color: $primary-color; 
+        }
         button{
-            background: white;
+            background:$primary-color;
             color: black;
             border: none;
         &:focus &:active{
-            background: white;
+            background: $primary-color;
         color: black;
         border: none;
+        border-color: $primary-color; 
         }
         .dropdown-toggle{
             background-color: none;
@@ -129,9 +134,9 @@
 .addtocard{
     .btnaddtcard{
         float: right;
-        background: white;
+        background:$primary-color;
         font-size: x-small;
-        border-color: green;
+        border-color: $secondary-color;
         border-radius: 12px;
     }
 }
@@ -143,7 +148,7 @@
     margin-top: 25%;
     .ordertitle{
         text-align: center;
-        color: green;
+        color:$secondary-color;
         font-size: xx-large;
     }
     .titlendiscrip{
@@ -156,9 +161,9 @@
     .removefromcard{
         .btnaddtcard{
             float: right;
-            background: white;
+            background:$primary-color;
             font-size: x-small;
-            border-color: green;
+            border-color:$secondary-color;
             border-radius: 12px;
         }
     }
